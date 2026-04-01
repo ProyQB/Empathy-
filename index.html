@@ -1,0 +1,27 @@
+<div id="app">
+  <header>
+    <h1>AI Beat Remix Lab</h1>
+    <div class="input-group">
+      <input type="text" id="youtube-url" placeholder="Paste YouTube URL...">
+      <button id="analyze-btn">Extract Patterns</button>
+    </div>
+  </header>
+
+  <main>
+    <div id="sequencer">
+      <div class="track" data-type="kick">
+        <div class="controls">
+          <span>Kick</span>
+          <button class="mute-btn">M</button>
+        </div>
+        <div class="steps" id="kick-grid"></div>
+      </div>
+      </div>
+  </main>
+
+  <footer class="transport">
+    <button id="play-pause">Play</button>
+    <input type="range" id="bpm" min="60" max="180" value="120">
+    <label for="bpm">BPM: <span id="bpm-val">120</span></label>
+  </footer>
+</div>
